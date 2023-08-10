@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  background: url(./Assets/Background.svg) no-repeat center / cover;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Principal (Main) */
+main {
+  display: flex;
+  width: 100%;
+  max-width: 588px;
+  height: 712px;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid whitesmoke;
+  margin: 20px;
+  border-radius: 8px;
+  padding: 24px 0;
+}
+
+/* Imagem */
+
+.Image {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.Image > span {
+  color: #fff;
+  font-weight: 400;
+  cursor: default;
+}
+
+.Image > img {
+  transition: 0.3s;
+}
+
+.Image > img:hover {
+  transform: scale(1.1);
+}
+
+/* Button */
+
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 40px;
+  margin: 10px 0 0 0;
+  position: relative;
+}
+.Button > span {
+  display: block;
+
+  border: 1px solid white;
+  width: 64px;
+  height: 24px;
+  border-radius: 9999px;
+}
+
+.Button > button {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  left: 0;
+  border-radius: 50%;
+  border: none;
+  background: white url(./Assets/Moon.svg) no-repeat center;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.1s;
+}
+
+.Button > button:hover {
+  outline: 6px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Navegation (Links) */
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 24px;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+nav > ul > li > a {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: inter;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  transition: 0.3s;
+}
+
+nav > ul > li > a:hover {
+  border: 1.5px solid #fff;
+  background: rgba(255, 255, 255, 0.05);
+  transform: scale(1.05);
+}
+
+/* Social Medias */
+
+.Social-Media {
+  width: 100%;
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.Social-Media > i {
+  font-size: 26px;
+  border-radius: 50%;
+  padding: 8px;
+  color: whitesmoke;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.Social-Media > i:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  transform: scale(1.4);
+}
+
+/* Footer */
+
+.Footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 10px 0 0 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: inter;
+  cursor: default;
+}
+
+.Footer span > a {
+  color: #fff;
+}
+
+/* Light Mode */
+.Body {
+  background: url(./Assets/bg-desktop-light.jpg) no-repeat center / cover;
+}
+
+.Ligth {
+  display: flex;
+  width: 100%;
+  max-width: 588px;
+  height: 712px;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  margin: 20px;
+  border-radius: 8px;
+  padding: 24px 0;
+}
+
+/* Imagem Light Mode*/
+
+.Image-Ligth {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.Image-Ligth > span {
+  color: #000;
+  font-weight: 400;
+  cursor: default;
+}
+
+.Image-Ligth > img {
+  transition: 0.3s;
+}
+
+.Image-Ligth > img:hover {
+  transform: scale(1.1);
+}
+
+/* Button Light Mode*/
+
+.Button-Ligth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 40px;
+  margin: 10px 0 0 0;
+  position: relative;
+}
+.Button-Ligth > span {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  width: 64px;
+  height: 24px;
+  border-radius: 9999px;
+}
+
+.Button-Ligth > button {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  right: 0;
+  border-radius: 50%;
+  border: none;
+  background: white url(./Assets/Sun.svg) no-repeat center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.Button-Ligth > button:hover {
+  outline: 5px solid rgba(24, 24, 24, 0.224);
+  transition: 0.1s;
+}
+
+/* Navegation (Links) Light Mode*/
+
+.Navegation {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 24px;
+}
+
+.Navegation > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.Navegation > ul > li > a {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(4px);
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: inter;
+  color: #000;
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  transition: 0.3s;
+}
+
+.Navegation > ul > li > a:hover {
+  border: 1.5px solid #000;
+  background: rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(4px);
+  transform: scale(1.05);
+}
+
+/* Social Medias Light Mode*/
+
+.Social-Media-Ligth {
+  width: 100%;
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.Social-Media-Ligth > i {
+  font-size: 26px;
+  border-radius: 50%;
+  padding: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #000;
+}
+
+.Social-Media-Ligth > i:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  transform: scale(1.4);
+}
+
+/* Footer Light Mode*/
+
+.Footer-Ligth {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 10px 0 0 0;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: inter;
+  cursor: default;
+}
+
+.Footer-Ligth span > a {
+  color: #000;
+}
+
+.Footer-Ligth span > i {
+  color: #000;
+}
+
+/* Media queries */
+
+@media (max-width: 700px) {
+  body {
+    background: url(./Assets/bg-mobile-dark.jpg) no-repeat center / cover;
+  }
+}
+
+/* Animation */
+
+@keyframes Ligth {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes Dark {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
